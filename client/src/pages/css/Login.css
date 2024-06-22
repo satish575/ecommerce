@@ -1,0 +1,50 @@
+.login-wrapper{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:10vw;
+    background-color: seagreen;
+    clip-path: polygon(0 1%, 100% 28%, 100% 100%, 0 80%);
+    z-index: -999;
+    
+    
+}
+
+
+.login_container{
+    padding: 10px;
+    width:40vw;
+    height:50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.login_container form{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.error_msg{
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(184, 111, 111);
+
+}
+@media only screen and (max-width: 767px) {
+    .login-wrapper{
+        flex-direction: column-reverse;
+    }
+    
+    .login_container{
+        width:100%;
+        height:40vh;
+       
+    }
+}
